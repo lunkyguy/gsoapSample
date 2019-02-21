@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.5)
+project(client)
+set(APP_SRC "calcclient.cpp")
+add_subdirectory(CalcClient)
+add_executable(client ${APP_SRC})
+target_link_libraries(client libCalcClient)
